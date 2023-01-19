@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.qa.ExtentReportListener.ExtentReportNG"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.scm.qa.testcases.LoginTest">
+        <methods>
+          <include name="crmLogTest"/>
+          <include name="loginTest"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="loginPageTitleTest"/>
+        </methods>
+      </class> <!-- com.scm.qa.testcases.LoginTest -->
+      <class name="com.scm.qa.testcases.HomePageTest">
+        <methods>
+          <include name="verityContactPage"/>
+          <include name="setup"/>
+          <include name="verifyPageTitle"/>
+          <include name="userVerification"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.scm.qa.testcases.HomePageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
